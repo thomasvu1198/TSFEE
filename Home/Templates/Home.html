@@ -1,0 +1,548 @@
+{% extends "default.html" %} {% block style %} {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/chat.css' %}" />
+{% endblock %} {% block header %}
+<div class="container-fluid p-0 align-items-center">
+    <img src="{% static 'image/8_slide4.jpg' %}" class="img-fluid" alt="Responsive image" />
+</div>
+{% endblock %} {% block content %} {% load static %}
+<div class="block-content row row-cols-lg-5">
+    <div class="col-lg pb-3">
+        <div class="row-cols-2 row">
+            <div class="col-3">
+                <img src="{% static 'image/school.png' %}" width="55" class="img-fluid" alt="Responsive image"
+                    style="filter: invert(15%) sepia(6%) saturate(6570%) hue-rotate(194deg) brightness(98%) contrast(88%);">
+            </div>
+            <div class="col-9">
+                <div class="stat_count">TOP 10</div>
+                <div class="count_info">Các trường kỹ thuật Việt Nam</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg pb-3">
+        <div class="row-cols-2 row">
+            <div class="col-3">
+                <img src="{% static 'image/corporate.png' %}" width="55" class="img-fluid" alt="Responsive image"
+                    style="filter: invert(15%) sepia(6%) saturate(6570%) hue-rotate(194deg) brightness(98%) contrast(88%);">
+            </div>
+            <div class="col-9">
+                <div class="stat_count"> > 50 NĂM </div>
+                <div class="count_info">Truyền thống kỷ lục GUINESS duy nhất về CSV</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg pb-3">
+        <div class="row-cols-2 row">
+            <div class="col-3">
+                <img src="{% static 'image/working.png' %}" width="55" class="img-fluid" alt="Responsive image"
+                    style="filter: invert(15%) sepia(6%) saturate(6570%) hue-rotate(194deg) brightness(98%) contrast(88%);">
+            </div>
+            <div class="col-9">
+                <div class="stat_count"> > 90%</div>
+                <div class="count_info">Sinh viên tốt nghiệp có việc làm ngay</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg pb-3">
+        <div class="row-cols-2 row">
+            <div class="col-3">
+                <img src="{% static 'image/money-bag.png' %}" width="55" class="img-fluid" alt="Responsive image"
+                    style="filter: invert(15%) sepia(6%) saturate(6570%) hue-rotate(194deg) brightness(98%) contrast(88%);">
+            </div>
+            <div class="col-9">
+                <div class="stat_count"> &lt; 50% </div>
+                <div class="count_info">Là chi phí học tập và sinh hoạt so với Hà Nội</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg pb-3">
+        <div class="row-cols-2 row">
+            <div class="col-3">
+                <img src="{% static 'image/departure.png' %}" width="55" class="img-fluid" alt="Responsive image"
+                    style="filter: invert(15%) sepia(6%) saturate(6570%) hue-rotate(194deg) brightness(98%) contrast(88%);">
+            </div>
+            <div class="col-9">
+                <div class="stat_count">0 GIỚI HẠN</div>
+                <div class="count_info">Việc làm tại Nhật Bản, Hàn Quốc, Đài Loan</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="block-content row row-cols-lg-3">
+    <div class="col-lg-3 box" style="background-color: #e2f0f8;">
+        <div class="box-heading"> Thông tin tuyển sinh</div>
+        <hr>
+        <div class="box-content">Thông báo Kế hoạch tuyển sinh sau đại học đợt 2 năm 2021 của Đại học Thái Nguyên...
+        </div>
+        <a href="https://ts.tnut.edu.vn/thong-bao-ke-hoach-tuyen-sinh-sau-dai-hoc-dot-2-nam-2021-cua-dai-hoc-thai-nguyen-dt121.html"
+            style="color: #ee3c45;margin-top: 12px;display: block;font-size: 16px;font-weight: 700;">Đọc tiếp&nbsp;<i
+                class="fa fa-angle-right"></i></a>
+    </div>
+    <div class="col-lg-3 box" style="background-color: #f7941d;">
+        <div class="box-heading">Khối ngành xét tuyển</div>
+        <hr>
+        <div class="box-content">A00, A01, D01, D07
+        </div>
+    </div>
+    <div class="col-lg-6 box" style="background-color: #ebebeb; padding:30px !important;">
+        <p style="text-align: center">
+            <span class="hiden-xs box-heading-1">Sẵn sàng trở thành sinh viên <br></span>
+            <span class="hiden-xs box-heading-1">Khoa Điện Tử TNUT</span>
+            <br>
+            <br>
+            <strong><span class="box-heading-1" style="color: #ff6600"><a style="color: #ff6600" href="#register">ĐĂNG
+                        KÝ
+                        NGAY!</a></span></strong></p>
+    </div>
+</div>
+
+<div class="block-content row row-cols-sm-3 mt-4" data-aos="fade-right" data-aos-duration="2000">
+    <div class="col-sm-3">
+        <img class="img-fluid" alt="Responsive image" src="{% static 'image/24-1.jpeg' %}" alt="" width="255">
+        <img class="img-fluid pt-3" alt="Responsive image" src="{% static 'image/tnut.jpg' %}" alt="" width="255">
+        <img class="img-fluid pt-3" alt="Responsive image" src="{% static 'image/fee5.jpg' %}" alt="" width="255">
+    </div>
+    <div class="col-sm-3">
+        <img class="img-fluid" alt="Responsive image" src="{% static 'image/fee2.jpg' %}" alt="" width="255">
+        <img class="img-fluid pt-3" alt="Responsive image" src="{% static 'image/fee3.jpg' %}" alt="" width="255">
+        <img class="img-fluid pt-3" alt="Responsive image" src="{% static 'image/fee4.jpg' %}" alt="" width="255">
+    </div>
+    <div class="col-sm-6 pt-5 pt-lg-0" data-aos="fade-right" data-aos-duration="2000">
+        <h3 class="box-heading-1">Khoa Điện Tử Trường Đại Học Kỹ Thuật và Công
+            Ngiệp-ĐHTN</h3>
+        <span class="box-content-1">
+            <p>
+                Khoa Điện tử được thành lập ngày 12 tháng 5 năm 2005 với tiền thân là sự kết hợp giữa hai bộ môn Kỹ
+                thuật Điện tử và Kỹ thuật Đo lường được tách ra từ Khoa Điện với Trung tâm Máy tính. Cùng với sự phát
+                triển
+                lớn mạnh của Trường Đại học Kỹ thuật Công nghiêp, trải qua các khó khăn, thử thách, tập thể khoa đã sớm
+                khẳng định được vị thế của mình và đã trở thành một trong các địa chỉ có uy tín về đào tạo, nghiên cứu,
+                và
+                chuyển giao công nghệ.</p>
+            <p>
+                Hiện tại trong khoa có 5 bộ môn, tên của các bộ môn trùng với chuyên ngành do bộ môn đảm nhiệm, đó
+                là: Kỹ thuật điện tử, Điện tử viễn thông, Kỹ thuật Điều khiển, Tin học Công nghiệp, Cơ điện tử; và tổ
+                Văn
+                phòng. Tổng số cán bộ viên chức trong khoa là 55 trong đó 06 phó giáo sư, 12 tiến sỹ, 13 nghiên cứu
+                sinh,
+                02 kỹ sư và số còn lại đã có trình độ thạc sĩ theo các chuyên ngành. Đội ngũ giảng viên của Khoa năng
+                động, được tốt nghiệp từ các trường đại học uy tín trong và ngoài nước, có nhiều thành tích trong giảng
+                dạy,
+                nghiên cứu khoa học, và chuyển giao công nghệ. Hiện khoa đang phụ trách 11 phòng thực hành thí nghiệm,
+                02
+                câu lạc bộ nghiên cứu khoa học.</p>
+        </span>
+        <div>
+            <h4 class="box-heading-2">Sứ mệnh</h4>
+            <p class="box-content-1">Cung cấp cho sinh viên chương trình giáo dục chất lượng cao, thích hợp, và dễ tiếp
+                cận ở trình độ đại học và sau đại học. Hình thức giáo dục này với mục đích truyền thụ kiến thức cơ bản,
+                cơ sở và chuyên ngành, chia sẻ những kinh nghiệm thực tiễn, tạo dựng môi trường nghiên cứu giúp cho sinh
+                viên sau khi tốt nghiệp có cơ hội công tác tại các khu công nghiệp, trường đại học, viện nghiên cứu, các
+                lĩnh vực khác.</p>
+        </div>
+    </div>
+</div>
+<div class="block-content row row-cols-sm-2 mt-4">
+    <div class="col-sm-4 pb-3" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+        <div class="box-heading pb-3">CHUYÊN NGÀNH ĐÀO TẠO</div>
+        <hr>
+        <div class="box-content-1">
+            <p>Bước sang thế kỷ XXI, thế giới và Việt nam đều khẳng định có 04 lĩnh vực khoa học
+                được gọi là lĩnh vực công nghệ cao, đó là: Công nghệ điện tử; Công nghệ Vật liệu mới; Công nghệ sinh học
+                và Công nghệ năng lượng mới. Ngành Công nghệ Điện tử ở đây thực chất được hiểu bao gồm từ công nghệ
+                Nano,
+                Kỹ thuật điện tử, Kỹ thuật máy tính, Điện tử viễn thông và Điều khiển Tự động.
+            </p>
+            <p> Trong sự phát triển mạnh mẽ của khoa học kĩ thuật với nền kinh tế trí thức và xu hướng hội nhập toàn cầu
+                như
+                hiện nay, thế giới và Việt nam đang thực hiện việc kết hợp giữa các ngành thuộc lĩnh vực công nghệ cao
+                trong
+                một Khoa hoặc cơ sở đào tạo. Đó là lĩnh vực khoa học dưới 3 ngọn cờ: Máy tính, Điện tử- Viễn thông và
+                Điều
+                khiển tự động mà ta thường gọi là “3 C” (Computer – Communication - Control). Khoa Điện tử chính là đơn
+                vị
+                chuyên môn phụ trách nhóm ngành công nghệ cao “3C” nêu trên.</p>
+
+        </div>
+    </div>
+    <div class="col-sm-8">
+        <div class="row row-cols-sm-2">
+            <div class="col-sm-6">
+                <div class="image-flip" style="width: 18rem;" data-aos="fade-up" data-aos-duration="2000"
+                    ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <img class="card-img-top" src="{% static 'image/ktmt.jpg' %}" alt="card image">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title box-heading-2">Kỹ Thuật Máy Tính</h4>
+                                    <a href="#" class="btn btn-orange btn-sm text-white"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title box-heading-2">Mã ngành 7480106 <br> Kỹ Thuật Máy Tính</h4>
+                                    <br>
+                                    <p class="card-text box-content-1">Chỉ tiêu: 50</p>
+                                    <p class="card-text box-content-1">Tổ hợp xét tuyển: A00, A01, D01, D07</p>
+                                    <a href="#" class="btn btn-orange">Chi tiết chương trình đào tạo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-flip" style="width: 18rem;" data-aos="fade-up" data-aos-duration="2000"
+                    ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <img class="card-img-top" src="{% static 'image/dtvt.jpg' %}" alt="card image">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title box-heading-2">Điện Tử Viễn Thông</h4>
+                                    <a href="#" class="btn btn-orange text-white btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title box-heading-2">Mã ngành 7520207 <br> Điện Tử Viễn Thông</h4>
+                                    <br>
+                                    <p class="card-text box-content-1">Chỉ tiêu: 100</p>
+                                    <p class="card-text box-content-1">Tổ hợp xét tuyển: A00, A01, D01, D07</p>
+                                    <a href="#" class="btn btn-orange">Chi tiết chương trình đào tạo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="image-flip" style="width: 18rem;" data-aos="fade-up" data-aos-duration="2000"
+                    ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <img class="card-img-top" src="{% static 'image/ktdt.jpg' %}" alt="card image">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title box-heading-2">Kỹ Thuật Điện Tử</h4>
+                                    <a href="#" class="btn btn-orange text-white btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title box-heading-2">Mã ngành 7520207 <br> Kỹ Thuật Điện Tử</h4>
+                                    <br>
+                                    <p class="card-text box-content-1">Chỉ tiêu: 100</p>
+                                    <p class="card-text box-content-1">Tổ hợp xét tuyển: A00, A01, D01, D07</p>
+                                    <a href="#" class="btn btn-orange">Chi tiết chương trình đào tạo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="image-flip" style="width: 18rem;" data-aos="fade-up" data-aos-duration="2000"
+                    ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                        <div class="frontside">
+                            <div class="card">
+                                <img class="card-img-top" src="{% static 'image/ktdk.jpg' %}" alt="card image">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title box-heading-2">Kỹ Thuật Điều Khiển Và Tự Động Hóa</h4>
+                                    <a href="#" class="btn btn-orange text-white btn-sm"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title box-heading-2">Mã ngành 7520216 <br> Kỹ Thuật Điều Khiển Và Tự
+                                        Động Hóa</h4>
+                                    <br>
+                                    <p class="card-text box-content-1">Chỉ tiêu: 350</p>
+                                    <p class="card-text box-content-1">Tổ hợp xét tuyển: A00, A01, D01,
+                                        D07</p>
+                                    <a href="#" class="btn btn-orange">Chi tiết chương trình đào tạo</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="block-heading pb-3 mt-5">
+    <h3 class="text-bold box-heading">
+        MÔI TRƯỜNG HỌC TẬP
+        <hr>
+        <p class="box-content text-center">Đầy đủ- tiện nghi- hiện đại</p>
+    </h3>
+</div>
+<div class="owl-carousel owl-theme owl-loaded p-4" id="slider-1">
+    <div class="owl-stage-outer">
+        <div class="owl-stage">
+            <div class="owl-item">
+                <a class="my-image-links" href="{% static 'image/photo1.jpg' %}"><img
+                        src="{% static 'image/photo1.jpg' %}"></a>
+            </div>
+            <div class="owl-item">
+                <a class="my-image-links" href="{% static 'image/photo2.jpg' %}"><img
+                        src="{% static 'image/photo2.jpg' %}"></a>
+            </div>
+            <div class="owl-item">
+                <a class="my-image-links" href="{% static 'image/photo4.jpg' %}"><img
+                        src="{% static 'image/photo4.jpg' %}"></a>
+            </div>
+            <div class="owl-item">
+                <a class="my-image-links" href="{% static 'image/photo5.jpg' %}"><img
+                        src="{% static 'image/photo5.jpg' %}"></a>
+            </div>
+            <div class="owl-item">
+                <a class="my-image-links" href="{% static 'image/photo6.jpg' %}"><img
+                        src="{% static 'image/photo6.jpg' %}"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="block-heading pb-3 mt-5">
+    <h3 class="text-bold box-heading">
+        HOẠT ĐỘNG SINH VIÊN
+        <hr>
+    </h3>
+</div>
+<div class="block-content mt-2 p-4" style="max-width: 1100px !important;">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <p class="box-content-1 p-3">Sản phẩm sáng tạo Robot của các bạn sinh viên</p>
+                    </div>
+                    <div class="col">
+                        <img class="d-block img-fluid" alt="Responsive image" src="{% static 'image/nk1.jpg' %}"
+                            alt="First slide" width="700">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <p class="box-content-1 p-3">Có đủ sân bóng đá nhân tạo, cầu lông, bóng chuyền</p>
+                    </div>
+                    <div class="col">
+                        <img class="d-block img-fluid" alt="Responsive image" src="{% static 'image/nk2.png' %}"
+                            alt="First slide" width="700">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <p class="box-content-1 p-3">Các CLB tình ngoại ngữ, văn nghệ, tình nguyện hoạt động thường
+                            xuyên</p>
+                    </div>
+                    <div class="col">
+                        <img class="d-block img-fluid" alt="Responsive image" src="{% static 'image/nk7.jpg' %}"
+                            alt="First slide" width="700">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+<div class="block-content row row-cols-sm-2 mt-5" data-aos-offset="300" data-aos-easing="ease-in-sine">
+    <div class="col-sm-4 pb-3" data-aos="fade-right">
+        <div class="box-heading pb-3">CƠ HỘI HỌC BỔNG</div>
+        <hr>
+        <div class="box-content-1">Chúng tôi sẽ đồng hành cùng ước mơ của bạn!
+        </div>
+    </div>
+    <div class="col-sm-8">
+        <div class="container" style="max-height: 400px; overflow: scroll;">
+            <p class="box-content-1">Hiện nay, học phí trung bình tại khoa vào khoảng 850.000đ/tháng, chi phí học tập và
+                sinh hoạt thấp hơn
+                nhiều so với các trường đại học ở Hà Nội.</p>
+            <p class="box-content-1"><b>Với các tân sinh viên có kết quả học tập tốt được xét học bổng của nhà trường
+                    như sau:</b></p>
+            <p class="box-content-1"><b>. </b>Thủ khoa: Học bổng toàn phần (Học phí + Lệ phí Ký túc xá) và thưởng 10
+                triệu đồng.
+            </p>
+            <p class="box-content-1"><b>. </b>Tuyển thẳng, từ 25 điểm trở lên: Học bổng toàn phần và hỗ trợ thêm 1 triệu
+                đồng/tháng.
+            </p>
+            <p class="box-content-1"><b>. </b>Điểm từ 22 điểm đến dưới 25 điểm: Học bổng toàn phần.
+            </p>
+            <p class="box-content-1"><b>.</b>Diện hộ nghèo, gia đình khó khăn, con của cựu sinh viên điểm từ 20 điểm đến
+                dưới 22 điểm: Học bổng toàn phần.
+            </p>
+            <p class="box-content-1"><b>. </b>Cấp học bổng đi du học ở Nhật Bản, Đài Loan, Đức cho tân sinh viên học
+                giỏi
+                ngay sau học kỳ đầu tiên hoặc cho sinh viên có nhu cầu.
+            </p>
+            <p class="box-content-1"><b>. </b>Trong quá trình học sinh viên được xét học bổng của Nhà trường hàng kỳ và
+                học bổng của nhiều tổ chức như KOVA, PANASONIC, HUSAN, SAMSUNG....tùy theo kết quả học tập.
+            </p>
+            <p class="box-content-1"><b>. </b>Đặc biệt, Sau khi ra trường, sinh viên có cơ hội đi làm việc diện kỹ sư
+                tại
+                Nhật Bản hoặc làm việc tại các doanh nghiệp Nhật Bản tại Việt Nam theo ký kết của Học viện Giáo dục Quốc
+                tế ATI/Hiệp hội Văn hóa ứng xử truyền thống MEISTER Nhật Bản với trường Đại học Kỹ thuật Công nghiệp.
+            </p>
+            <p class="box-content-1"><b>. </b>Cơ hội học đại học không cần chi phí ở Trường Đại học Kỹ thuật công nghiệp
+                Thái Nguyên vì nếu sau 1 học kỳ, sinh viên đạt học lực khá trở lên sẽ tiếp tục nhận được học bổng ở kỳ
+                kế tiếp.
+            </p>
+            <p class="box-content-1"><b>CHƯƠNG TRÌNH HỌC BỔNG 2018 DÀNH CHO TÂN SINH VIÊN KHOA ĐIỆN TỬ</b></p>
+            <p class="box-content-1"><b>. </b>100% tân sinh viên được nhận Học bổng miễn phí một lớp học tiếng anh giao
+                tiếp.
+            </p>
+            <p class="box-content-1"><b>. </b>20 học bổng ở ký túc xá kỳ đầu tiên cho sinh viên có hoàn cảnh khó khăn.
+            </p>
+            <p class="box-content-1"><b>. </b>Sinh viên được sử dụng nguồn học liệu online miễn phí.
+            </p>
+            <p class="box-content-1"><b>. </b>Thư viện mở cửa 16 tiếng/ngày phục vụ sinh viên.
+            </p>
+            <p class="box-content-1"><b>. </b>Được tham gia miễn phí vào các Câu lạc bộ rèn luyện kỹ năng sống, kỹ năng
+                thuyết trình, thể thao, câu lạc bộ khoa học sinh viên khoa Điện tử...
+            </p>
+        </div>
+    </div>
+</div>
+<div class="block-heading pb-3 mt-5">
+    <div class="box-heading-1 pb-3">ĐĂNG KÝ</div>
+    <hr>
+</div>
+<form class="ms-5 col-lg-8">
+    <div class="form-group row mb-3">
+        <label for="inputEmail3" class="col-sm-2 col-form-label box-content">Tên</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" placeholder="Tên*" />
+        </div>
+    </div>
+    <div class="form-group row mb-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label box-content">Số điện thoại</label>
+        <div class="col-sm-10">
+            <input type="number" class="form-control" id="phone" placeholder="Số điện thoại*" />
+        </div>
+    </div>
+    <div class="form-group row mb-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label box-content">Trường đang học</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="school" placeholder="Trường*" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-10">
+            <button type="submit" class="btn btn-outline-primary rounded box-content btn-orange">
+                <i class="fa fa-paper-plane"></i> ĐĂNG KÝ
+            </button>
+        </div>
+    </div>
+</form>
+<div class="block-content mt-4" style="margin:0px !important; padding: 0px !important;margin-top:5% !important">
+    <section class="testimonial text-center">
+        <div class="container">
+            <div id="testimonial4"
+                class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x"
+                data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="row row-cols-2 testimonial4_slide">
+                            <div class="col-4">
+                                <img src="http://ts.tnut.edu.vn/Uploads/Banner/14_thaycuong.jpg"
+                                    class="img-circle img-responsive" />
+                                <strong class="box-content"><br>PGS.TS Nguyễn Duy
+                                    Cương<br></strong>
+                                <small class="box-content-1">Hiệu Trưởng nhà
+                                    trường</small>
+                            </div>
+                            <div class="col-8">
+                                <p class="box-content">"Trường Đại học Kỹ thuật Công nghiệp đang nỗ lực hết mình vì
+                                    tương
+                                    lai của sinh viên và
+                                    trách nhiệm với sự nghiệp Công nghiệp hóa - Hiện đại hóa đất nước" </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row row-cols-2 testimonial4_slide">
+                            <div class="col-4">
+                                <img src="http://ts.tnut.edu.vn/Uploads/Banner/14_thaycuong.jpg"
+                                    class="img-circle img-responsive" />
+                                <strong class="box-content"><br>PGS.TS Nguyễn Duy
+                                    Cương<br></strong>
+                                <small class="box-content-1">Hiệu Trưởng nhà
+                                    trường</small>
+                            </div>
+                            <div class="col-8">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/puKv44mjwTU"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row row-cols-2 testimonial4_slide">
+                            <div class="col-4">
+                                <img src="http://ts.tnut.edu.vn/Uploads/Banner/14_thaycuong.jpg"
+                                    class="img-circle img-responsive" />
+                                <strong class="box-content"><br>PGS.TS Nguyễn Duy
+                                    Cương<br></strong>
+                                <small class="box-content-1">Hiệu Trưởng nhà
+                                    trường</small>
+                            </div>
+                            <div class="col-8">
+                                <p class="box-content">"Trường Đại học Kỹ thuật Công nghiệp đang nỗ lực hết mình
+                                    vì
+                                    tương
+                                    lai của sinh viên và
+                                    trách nhiệm với sự nghiệp Công nghiệp hóa - Hiện đại hóa đất nước" </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %} {% block message %}
+<div class="chat-widget">
+    <div class="chat-widget--bubble">
+        <h1 class="chat-widget--header"></h1>
+        <p class="chat-widget--text">Chào bạn! Mình có thể giúp gì cho bạn?</p>
+        <button>Chat với chúng tôi</button>
+    </div>
+    <a class="chat-widget--button">
+        <svg viewBox="0 0 41 36" class="chat-widget--icon">
+            <path
+                d="M34.7 5.2C38.6 8.6 40.7 13.2 40.7 18 40.7 22.8 38.6 27.4 34.7 30.8 31 34.2 26 36 20.7 36 19.1 36 17.5 35.8 16 35.5 15.2 35.3 14.7 34.5 14.9 33.7 15.1 32.9 15.8 32.4 16.6 32.6 17.9 32.9 19.3 33 20.7 33 30.1 33 37.7 26.3 37.7 18 37.7 9.7 30.1 3 20.7 3 11.3 3 3.6 9.7 3.6 18 3.6 21.4 4.9 24.7 7.3 27.4 7.7 27.8 7.8 28.4 7.6 28.9 7.2 30 6.7 30.9 6 31.8 7.2 31.7 8.6 31.3 9.8 30.6 10.5 30.1 11.5 30.4 11.9 31.1 12.3 31.8 12.1 32.7 11.4 33.1 8.3 35 5 34.9 3.3 34.6 2.5 34.5 1.8 33.9 1.7 33.1 1.5 32.3 1.8 31.4 2.5 31 3.4 30.4 4 29.6 4.5 28.6 2 25.6 0.7 21.8 0.7 18 0.7 13.2 2.8 8.6 6.6 5.2 10.4 1.8 15.4 0 20.7 0 26 0 31 1.8 34.7 5.2ZM20.7 20C19.6 20 18.7 19.1 18.7 18 18.7 16.9 19.6 16 20.7 16 21.7 16 22.6 16.9 22.6 18 22.6 19.1 21.7 20 20.7 20ZM26.7 20C25.6 20 24.8 19.1 24.8 18 24.8 16.9 25.6 16 26.7 16 27.8 16 28.6 16.9 28.6 18 28.6 19.1 27.8 20 26.7 20ZM14.6 20C13.6 20 12.7 19.1 12.7 18 12.7 16.9 13.6 16 14.6 16 15.7 16 16.6 16.9 16.6 18 16.6 19.1 15.7 20 14.6 20Z">
+            </path>
+        </svg>
+    </a>
+</div>
+<script type="text/javascript" src="{% static 'script/chat.js' %}"></script>
+{% endblock %}
